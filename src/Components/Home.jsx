@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import ImageUpload from "./ImageUpload";
+import ImagePreview from "./ImagePreview";
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <ImageUpload />
+      <ImagePreview />
+    </>
+  );
+};
 
-export default Home
+export default Home;
