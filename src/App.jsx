@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
+import Home from "./Components/Home";
 
 const App = () => {
   return (
-    <div>
-        <h1>AI Image Enhancer</h1>
-      
-    </div>
-  )
-}
+    <>
+      Header
+      <Home />
+      footer
+    </>
+  );
+};
 
-export default App
+export default App;
