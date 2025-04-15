@@ -7,11 +7,18 @@ const Home = () => {
   const [enhancedImage, setEnhancedImage] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  // const uploadImagehandler = (file) => {};
+  const uploadImagehandler = (file) => {
+    // console.log(URL.createObjectURL(file));
+    setUploadImage(URL.createObjectURL(file))
+    setLoading(true)
+    // Api calling to enhance the image
+
+  };
 
   return (
     <>
-      <ImageUpload />
+      {/* 👆 Parent ne ImageUpload ko render kiya AND ek prop bheja */}
+      <ImageUpload uploadImagehandler={uploadImagehandler} />
       <ImagePreview
         loading={loading}
         uploaded={uploadImage}
