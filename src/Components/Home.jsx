@@ -11,7 +11,7 @@ const Home = () => {
     // console.log(URL.createObjectURL(file));
     setUploadImage(URL.createObjectURL(file));
     setLoading(true);
-    
+
     try {
       // code which may produce error
     } catch (error) {

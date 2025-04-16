@@ -3,7 +3,7 @@ import React from "react";
 const ImageUpload = (props) => {
   const showImageHandler = (e) => {
     // console.log(e.target.files[0]);
-    const file = e.target.files[0]
+    const file = e.target.files[0];
     if (file) {
       props.uploadImagehandler(file);
     }
