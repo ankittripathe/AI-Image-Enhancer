@@ -4,7 +4,7 @@ import { ClipLoader } from "react-spinners";
 const Loading = () => {
   return (
     <div className="flex justify-center items-center h-full">
-      <ClipLoader color="crimson" size={60} />;
+      <ClipLoader color="crimson" size={60} />
     </div>
   );
 };
