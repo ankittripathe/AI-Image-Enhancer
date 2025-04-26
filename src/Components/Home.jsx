@@ -9,22 +9,24 @@ const Home = () => {
   const [enhancedImage, setEnhancedImage] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  
+
   const uploadImagehandler = async (file) => {
     console.log(URL.createObjectURL(file)); // console
     setUploadImage(URL.createObjectURL(file));
     setLoading(true);
 
-    try {
-      // code which may produce error
-      const enhancedURL = await enhancedImageAPI(file);
-      setEnhancedImage(enhancedURL);
-      setLoading(false);
-    } catch (error) {
-      // code to handle the error and show message
-      console.log(error);
-      alert("Error while enhancing the image. Please try again later");
-    }
+
+    // try {
+    //   // code which may produce error
+    //   const enhancedURL = await enhancedImageAPI(file);
+    //   setEnhancedImage(enhancedURL);
+    //   setLoading(false);
+    // } catch (error) {
+    //   // code to handle the error and show message
+    //   console.log(error);
+    //   alert("Error while enhancing the image. Please try again later");
+    // }
+
   };
 
   return (
